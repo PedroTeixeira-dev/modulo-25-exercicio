@@ -21,7 +21,7 @@ adicionaAluno('Helena', 8)
 
 console.log(listaDeAlunos)
 
-let alunosAprovados = listaDeAlunos.filter(estudante => estudante.nota > 6)
+let alunosAprovados = listaDeAlunos.filter(estudante => estudante.nota >= 6)
 
 let nomeAprovados = alunosAprovados.map(aluno => {
     return aluno.nome
