@@ -23,4 +23,10 @@ console.log(listaDeAlunos)
 
 let alunosAprovados = listaDeAlunos.filter(estudante => estudante.nota > 6)
 
+let nomeAprovados = alunosAprovados.map(aluno => {
+    return aluno.nome
+})
+
+console.log(`os alunos aprovados sao:  ${nomeAprovados}`)
+
 console.log(alunosAprovados)
